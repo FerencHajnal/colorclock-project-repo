@@ -17,4 +17,9 @@ function colorClock(){
     var clockFace = hours + ':' + minutes + ':' + seconds;
   
     document.getElementById('clock').innerHTML = clockFace;
+
+    setTimeout(function() {
+        colorClock();
+      }, 1000);
   }
+colorClock();
